@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../data_strucs/stack.cpp"
 #include "../data_strucs/queue.cpp"
+#include "../data_strucs/linked_list.cpp"
 
 int option; 
 
@@ -18,8 +19,12 @@ int main() {
                 runStack(); // Call the stack function to handle stack operations
                 break; 
             case 2: 
-                std::cout << "You've selected Stack" << std::endl;
-                runQueue(); // Call the queue function to handle stack operations
+                std::cout << "You've selected Queue" << std::endl;
+                runQueue(); // Call the queue function to handle queue operations
+                break;
+            case 3:
+                std::cout << "You've selected Linked List" << std::endl;
+                runLinkedList(); // Call the linked list function to handle linked list operations
                 break;
             case 0:
                 std::cout << "Exiting..." << std::endl;
